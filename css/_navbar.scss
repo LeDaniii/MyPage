@@ -1,0 +1,33 @@
+.nav-light {
+  ul {
+    @include flex(flex-start, flex-start, row);
+    li {
+      list-style: none;
+      margin: 2rem;
+      padding: 1rem;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      &:hover {
+        cursor: pointer;
+        background: #cc5947;
+      }
+    }
+  }
+}
+
+.nav-dark {
+  ul {
+    @include flex(flex-start, flex-start, row);
+    li {
+      list-style: none;
+      margin: 2rem;
+      padding: 1rem;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      &:hover {
+        cursor: pointer;
+        background: #e6ccc8;
+      }
+    }
+  }
+}

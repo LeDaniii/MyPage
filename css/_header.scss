@@ -1,0 +1,31 @@
+header {
+  @include flex(space-between, flex-start, row);
+  .brand-wrapper {
+    @include flex(space-between, flex-start, row);
+    padding: 2rem 3rem;
+    button {
+      width: 100%;
+    }
+    .language-btn-wrapper {
+      width: 100%;
+      margin: 2rem 0;
+      @include flex(space-between, flex-start, row);
+      button {
+        padding: 0.5rem;
+        width: 25%;
+      }
+    }
+  }
+  #brand {
+    margin: auto;
+    font-size: 6rem;
+    color: #322925;
+  }
+}
+.img {
+  // background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 1rem;
+}

@@ -1,0 +1,39 @@
+.main {
+  @include flex(center, flex-start, row);
+  flex-flow: wrap;
+  background: #f8caba;
+  padding: 2rem;
+  .skillset {
+    width: 90%;
+  }
+  .mechanic {
+    @include flex(flex-start, flex-start, row);
+  }
+  .coder {
+    @include flex(flex-end, flex-start, row);
+  }
+  .card {
+    width: 40%;
+    height: 32rem;
+    padding: 1rem;
+    color: white;
+    margin: 1rem;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    .cardImg {
+      height: 80%;
+      img {
+        height: 100%;
+      }
+    }
+    &:hover {
+      animation: full-width 0.1s ease forwards;
+      // width: 100%;
+      cursor: pointer;
+    }
+    @keyframes full-width {
+      100% {
+        width: 100%;
+      }
+    }
+  }
+}

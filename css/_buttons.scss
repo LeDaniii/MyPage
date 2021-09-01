@@ -1,0 +1,28 @@
+.light-mode {
+  transition: width 0.5s;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: #cc5947;
+  box-shadow: 1px 1px 0px #ac493a, 2px 2px 0px #85382d, 3px 3px 0px #692d24,
+    4px 4px 0px #361712;
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px black;
+  }
+}
+
+.dark-mode {
+  transition: width 0.5s;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: #e6ccc8;
+  color: #000000;
+  box-shadow: 1px 1px 0px #856f6b, 2px 2px 0px #5a4a48, 3px 3px 0px #362d2c,
+    4px 4px 0px #000000;
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px black;
+  }
+}
