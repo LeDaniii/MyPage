@@ -1,0 +1,58 @@
+.project-light {
+  background: #f8caba;
+  padding: 1rem;
+}
+
+.project-dark {
+  background: #645056;
+  padding: 1rem;
+}
+
+.project-wrapper {
+  margin: auto;
+  width: 80%;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  color: white;
+  margin: 2rem auto;
+  @include flex(space-between, flex-start, row);
+  .project-img {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .project-desc {
+    width: 59%;
+    .project-desc-header {
+      .buttons {
+        margin: 1.5rem 0;
+      }
+      a {
+        background: #cc5947;
+        margin-right: 1.5rem;
+        font-size: 2.5rem;
+        padding: 1rem 1rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        &:hover {
+          color: white;
+          background: rgb(35, 100, 165);
+        }
+      }
+    }
+    .project-desc-description {
+      @include flex(flex-start, space-between, column);
+      height: 100%;
+      font-size: 1.8rem;
+      .icons {
+        height: 3rem;
+        width: 100%;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

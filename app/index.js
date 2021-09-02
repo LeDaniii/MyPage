@@ -65,6 +65,10 @@ function darkmodeSwitch() {
         aboutSection.classList.remove('about-light')
         aboutSection.classList.add('about-dark')
         // about end
+        // projects start
+        projectsSection.classList.remove('about-light')
+        projectsSection.classList.add('about-dark')
+        // projects end
         // footer start
         footer.style.background = "#4f4252"
         // footer end
@@ -97,6 +101,10 @@ function darkmodeSwitch() {
         aboutSection.classList.remove('about-dark')
         aboutSection.classList.add('about-light')
         // about end
+        // projects start
+        projectsSection.classList.remove('about-dark')
+        projectsSection.classList.add('about-light')
+        // projects end
         // footer start
         footer.style.background = ""
         // footer end
